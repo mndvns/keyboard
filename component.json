@@ -1,0 +1,23 @@
+{
+  "name": "keyboard",
+  "repo": "mvanasse/keyboard",
+  "description": "An interactive keyboard interface",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/mousetrap": "*",
+    "component/live-css": "*",
+    "component/reactive": "*",
+    "component/assert": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "template.js"
+  ],
+  "styles": [
+    "style.css"
+  ]
+}
