@@ -11,17 +11,24 @@
     <script type="text/javascript" src="mocha/mocha.js"></script>
     <script type="text/javascript">
       mocha.setup('bdd');
-      mocha.globals(["keyboard"]);
+      mocha.globals(["angular", 
+        "keyboard", "reactive", "domify", "dom", "bind",
+        "m", "t", "_"
+      ]);
+
     </script>
     <script type="text/javascript" src="../build/build.js"></script>
     <script type="text/javascript" src="keyboard.js"></script>
     <script type="text/javascript">
       mocha.run();
+      bind     = require("bind");
+      dom      = require("dom");
+      reactive = require("reactive");
+      keyboard = require("keyboard");
+      _        = require("underscore");
     </script>
-    <script type="text/javascript">
-      var keyboard = require("keyboard")
-      keyboard()
-    </script>
+    <br />
+    <textarea id="typer" name="" cols="30" rows="10"></textarea>
 
   </body>
 

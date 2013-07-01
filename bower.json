@@ -10,21 +10,22 @@
     "component/domify": "*",
     "component/dom": "*",
     "component/bind": "*",
-    "component/underscore": "*",
-    "component/event": "*"
+    "angular": "~1.0.7"
   },
   "development": {},
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": [
-    "bower/angular/angular.min.js",
-    "lib/adapter.js",
-    "lib/text-bindings.js",
-    "lib/bindings.js",
     "lib/index.js",
+    "lib/bindings.js",
     "template.js"
   ],
   "styles": [
     "style.css"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
   ]
 }
