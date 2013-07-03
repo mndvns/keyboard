@@ -11,17 +11,21 @@
     "component/dom": "*",
     "component/bind": "*",
     "component/underscore": "*",
+    "component/event": "*",
+    "component/emitter": "*",
+    "component/model": "*",
     "component/event": "*"
   },
   "development": {},
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": [
-    "bower/angular/angular.min.js",
     "lib/adapter.js",
+    "lib/registry.js",
     "lib/text-bindings.js",
     "lib/bindings.js",
     "lib/index.js",
+    "lib/attachments.js",
     "template.js"
   ],
   "styles": [

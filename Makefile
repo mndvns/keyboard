@@ -1,7 +1,7 @@
 
 SRC = $(wildcard lib/*.js)
 
-build: components stylus template.js $(SRC)
+build: components stylus jade template.js $(SRC)
 	@component build --dev
 
 template.js: template.html
@@ -14,8 +14,8 @@ stylus:
 	@./node_modules/.bin/stylus \
 		-c . --use nib
 
-# jade:
-# 	@jade ./template.jade
+jade:
+	@jade ./template.jade
 
 clean:
 	rm -fr build components template.js

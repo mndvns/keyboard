@@ -27,5 +27,8 @@
     "**/.*",
     "node_modules",
     "components"
-  ]
+  ],
+  "devDependencies": {
+    "jquery": "~2.0.2"
+  }
 }

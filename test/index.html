@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE>
 <html>
   <head>
@@ -7,29 +9,50 @@
     <meta />
   </head>
   <body>
+  <!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.12.0/codemirror.min.js"></script> -->
+
+<!-- <textarea autofocus input ></textarea> -->
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <div id="mocha"></div>
     <script type="text/javascript" src="mocha/mocha.js"></script>
     <script type="text/javascript">
       mocha.setup('bdd');
       mocha.globals(["angular", 
-        "keyboard", "reactive", "domify", "dom", "bind",
-        "m", "t", "_"
+        "kb", "keyboard", "reactive", "domify", "dom", "bind",
+        "m", "t", "_", "model", "test", "j", "$", "emit"
       ]);
 
     </script>
     <script type="text/javascript" src="../build/build.js"></script>
     <script type="text/javascript" src="keyboard.js"></script>
-    <script type="text/javascript">
-      mocha.run();
-      bind     = require("bind");
-      dom      = require("dom");
-      reactive = require("reactive");
-      keyboard = require("keyboard");
-      _        = require("underscore");
-    </script>
     <br />
-    <textarea id="typer" name="" cols="30" rows="10"></textarea>
+
+<!-- <div id="guy-template"> -->
+<!--   <h1 data-text="name"></h1> -->
+<!--   <h1 data-text="description"></h1> -->
+<!-- </div> -->
+
+
+
+
+<!-- <h2>not bound</h2> -->
+
+<script>
+
+  /* mocha.run(); */
+
+  // window.j = kb("textarea", "new1");
+  // console.log("KB: ", kb);
+  // console.log("INSTANCE: ", j);
+  /* document.body.appendChild(domify("<h1>asdadsa</h1>")); */
+</script>
+
+
+
+
 
   </body>
 
 </html>
+

@@ -1,34 +1,43 @@
 
 
-var bind     = require("bind");
-var reactive = require("reactive");
-var domify   = require("domify");
-var assert   = require("assert");
-var keyboard = require("keyboard");
+event = require("event");
+bind     = require("bind");
+reactive = require("reactive");
+domify   = require("domify");
+assert   = require("assert");
+Emitter  = require("emitter");
+_ = require("underscore");
+dom = require("dom");
+
+kb = require("keyboard");
+
+window.j = kb("textarea", "new1");
+window.i = j.input;
+window.b = j.board;
+
+console.log("KB: ", kb);
+console.log("INSTANCE: ", j);
+console.log("INPUT: ", i);
+console.log("BOARDK", b);
+
+
 
 describe("Keyboard", function() {
   it("should exist as a global object", function() {
-    assert(keyboard !== null);
+    assert(kb !== null);
   });
 
   describe("attach", function() {
-    var el;
-    var attr;
-    var reg;
-    var attach;
 
     beforeEach(function(){
-      el = domify("<textarea rows='30'>hello</textarea>");
-      attr = "rows";
-      reg = "textbox";
-      attach = keyboard.attach(el, attr, reg);
     });
-    it("should take an element, attr, and register", function() {
-      assert("object" == typeof attach);
+    it("should trigger keyups programmatically", function(){
+      assert(1 === 1);
     });
-    it("#grab() should return the value of the elemnt attr", function() {
-      assert("object" == typeof attach);
-    });
+
+
+
+  });
 
 
     // it("should take an attr", function() {
@@ -43,8 +52,8 @@ describe("Keyboard", function() {
     //   assert("object" === typeof attachment);
     // });
 
-  });
+  // });
 });
 
 
-console.log(keyboard);
+// console.log(kb);
